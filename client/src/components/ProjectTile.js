@@ -8,7 +8,7 @@ class ProjectTile extends React.Component {
     const projectLink = '/projects/' + link;
 
     return (
-      <div className='project_tile'>
+      <div className='project_tile' key={projectLink}>
           <h3>{title}</h3>{icon}
           <p>{date}</p>
           <Link to={projectLink}>Take a look</Link>

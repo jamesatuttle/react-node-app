@@ -22,6 +22,14 @@ app.get("/employment", (req, res) => {
     ]});
 });
 
+app.get("/projects", (req, res) => {
+    res.json({ message: [
+        {"title": "Random number generator", "type": "javascript", "date": "September 2021", "link": "random-number-generator"},
+        {"title": "This react app", "type": "javascript", "date": "September 2021", "link": "this-react-app"},
+        {"title": "Drawings using CSS", "type": "css", "date": "September 2021", "link": "drawing-using-css"}
+    ]})
+});
+
 // All other GET requests not handled yet will return the React app
 app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
