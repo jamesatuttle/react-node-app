@@ -4,6 +4,7 @@ import Computer from '../svgs/Computer';
 import Swimming from '../svgs/Swimming';
 import Star from '../svgs/Star';
 import PageLayout from './PageLayout';
+import JobList from './JobList';
 
 class About extends React.Component {
 
@@ -19,18 +20,7 @@ class About extends React.Component {
 
 
           <Computer/><h2 id='work'>Where I've Worked</h2>
-          <h3>HM Revenue &amp; Customs <small>(12 Month Industrial Placement)</small></h3>
-          <p>Assistant Software Developer 2015 - 2016</p>
-
-          <h3>Partnerize</h3>
-          <p>Application Support Engineer 2017 - 2018</p>
-
-          <h3>Caspian</h3>
-          <p>Junior Frontend Developer 2018 - 2019</p>
-
-          <h3>Partnerize</h3>
-          <p>Platform Support Engineer 2019 - Present</p>
-
+          <JobList />
 
           <Swimming/><h2 id='hobbies'>Hobbies</h2>
           <p>I love keeping fit with swimming, the gym, and rock climbing. I also love Console and PC gaming, playing Dungeons and Dragons, and travelling to experience the world and finding awesome street art.</p>
@@ -44,4 +34,4 @@ class About extends React.Component {
   }
 };
 
-export default About
+export default About;
