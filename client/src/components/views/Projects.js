@@ -29,9 +29,7 @@ function Projects() {
 
           <div className='projectSection'>
             <Css3/><h2>CSS</h2>
-            <div className='projects_container'>
-              <ProjectList props={!data ? null : data.filter(getCSSProjects)}/>
-            </div>
+            <ProjectList props={!data ? null : data.filter(getCSSProjects)}/>
           </div>
         </section>
       </PageLayout>
