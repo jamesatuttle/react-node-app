@@ -1,0 +1,46 @@
+#drawings-using-css {
+
+    h1 + p {
+        margin-bottom: 50px;
+    }
+
+    p {
+        max-width: 60ch;
+    }
+
+    .drawing_and_info_container {
+        margin-bottom: 100px;
+
+        .image_with_text {
+            .container {
+                border: 1px solid #58839d44;
+                -moz-box-shadow:    inset 0 0 5px rgba(0, 0, 0, 0.2);
+                -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+                box-shadow:         inset 0 0 5px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                padding: 3%;
+                border-radius: 20px;
+
+                img {
+                    height: 200px;
+
+                    @media only screen and (max-width: 600px) {
+                        height: 150px;
+                    }
+
+                    @media only screen and (max-width: 370px) {
+                        height: 100px;
+                    }
+                }
+
+                @media only screen and (max-width: 370px) {
+                    padding: 5%;
+                }
+            }
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

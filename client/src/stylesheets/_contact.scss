@@ -1,0 +1,113 @@
+section#contact {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin: 0;
+  
+    h2 {  
+      &::after {
+        content: "";
+        display: block;
+        height: 5px;
+        width: 30px;
+        top: 10px;
+        left: calc(50% - 15px);
+        position: relative;
+        background-color: #75D3C3;
+      }
+    }
+
+    .twoColumn {
+      min-height: calc(100vh - 400px);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+
+      @media only screen and (max-width: 800px) {
+        flex-direction: column-reverse;
+        // gap: 50px;
+
+        .buttons {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  
+    form {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 0;
+      width: 450px;
+  
+      legend {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 50px;
+      }
+  
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      p {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin: 50px 0 0 0;
+
+        a {
+            color: #30587A;
+        }
+      }
+
+      span {
+        display: block;
+
+        p {
+            display: inline-block;
+            margin-right: 16px;
+        }
+
+        svg {
+            width: 25px;
+            transform: rotate(20deg);        
+        }
+      }
+
+      @media only screen and (max-width: 1450px) {
+        width: 40%;
+      }
+
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
+    }
+
+    .buttons {
+      width: 50%;
+
+      .emailLink a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      div {
+        margin-top: 30px;
+
+        @media only screen and (max-width: 1450px) {
+          a {
+            display: inline-block;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
+    }
+  }
