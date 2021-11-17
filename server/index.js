@@ -22,7 +22,7 @@ app.get("/employment", (req, res) => {
     ]});
 });
 
-app.get("/projects", (req, res) => {
+app.get("/projectsList", (req, res) => {
     res.json({ message: [
         {"title": "Random number generator", "type": "javascript", "date": "September 2021", "link": "random-number-generator"},
         {"title": "This react app", "type": "javascript", "date": "September 2021", "link": "this-react-app"},

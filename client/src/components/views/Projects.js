@@ -8,7 +8,7 @@ function Projects() {
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
-    fetch("/projects")
+    fetch("/projectsList")
       .then((res) => res.json())
       .then((data) => setData(data.message));
   }, []);
